@@ -1,0 +1,9 @@
+logging:
+  level:
+    org.apache.camel: DEBUG
+
+rabbit:
+  uri: pordefinir
+
+mongo:
+  uri: pordefinir
