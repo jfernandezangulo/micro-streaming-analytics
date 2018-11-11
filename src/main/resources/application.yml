@@ -1,0 +1,24 @@
+spring:
+  data:
+    mongodb:
+      host: ${MONGODB_HOST_NAME:localhost}
+      port: 27017
+      database: db
+
+camel:
+  component:
+    rabbitmq:
+      hostname: ${RABBITMQ_HOST_NAME:localhost}
+      port-number: 5672
+      password: guest
+      username: guest
+
+logging:
+  level:
+    org.apache.camel: DEBUG
+
+rabbit:
+  uri: rabbitmq:myqueue
+
+mongo:
+  uri: mongodb3:mongo?database=db&collection=estadisticas&operation=insert
