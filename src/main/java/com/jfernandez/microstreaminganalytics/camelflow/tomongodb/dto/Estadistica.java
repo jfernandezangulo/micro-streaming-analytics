@@ -1,12 +1,15 @@
 package com.jfernandez.microstreaminganalytics.camelflow.tomongodb.dto;
 
 import lombok.Data;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 
 @Data
+@Document(collection = "estadisticas")
 public class Estadistica {
 
-
+    @Id
     private String id;
 
     private DateTime dateTime;
